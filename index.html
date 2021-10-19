@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Helper</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!--É importante que se façam as importações dos scripts em último lugar
+    porque devem ser os últimos a serem carregados, no caso de estes serem muito pesados.
+    No entanto, recentemente, já temos o atributo "defer" que ajuda a prevenir isso.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="/js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a03bbfcbe.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Login - Helper</h1>
+    </header>
+    <main>
+        <form>
+            <section class="inputs-container">
+                <input type="email" placeholder="example@gmail.com">
+                <div class="password-container">
+                    <input type="password" id="field-password" class="field-password" placeholder="**********">
+                    <i class="fa fa-duotone fa-eye" id="eye" onclick="showPassword()"></i>
+                    <i class="fa fa-duotone fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                </div>
+            </section>
+            <section class="password-infos">
+                <div>
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </div>
+                <a href="#">Did you forget your password?</a>
+            </section>
+            <button id="btn-login">Login</button>
+            <section class="links-container">
+                <span>Or sign in with:</span>
+                <aside>
+                    <a href=""><i class="fab fa-brands fa-google google"></i></a>
+                    <a href=""><i class="fab fa-brands fa-facebook facebook"></i></a>
+                    <a href=""><i class="fab fa-brands fa-linkedin linkedin"></i></a>
+                </aside>
+            </section>
+            <footer>
+                <span>Do not have an account yet? <a href="#">Sign up</a></span>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
